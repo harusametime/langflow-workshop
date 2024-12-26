@@ -2,7 +2,7 @@
 
 ローコード・ノーコードで生成 AI のアプリケーション開発を行うことができる Langflow の使い方を知るためのハンズオンコンテンツを提供しています。[DataStax Langflow](https://www.datastax.com/products/langflow) を利用することを想定していますが、[オープンソース版の Langflow](https://github.com/langflow-ai/langflow) でも環境を整えることで利用可能です。
 
-DataStax Langflow を利用するためには DataStax のアカウントが必要です。アカウントは無料で作成することが可能で、作成方法については後述します。生成 AI のアプリケーションを開発する際には Langflow 以外に、LLM (大規模言語モデル) などの生成 AI のモデルを利用するためのツールやサービスが必要になります。生成 AI のモデルは 
+DataStax Langflow を利用するためには DataStax のアカウントが必要です。アカウントは無料で作成することが可能です。また、生成 AI のアプリケーションを開発する際には Langflow 以外に、LLM (大規模言語モデル) などの生成 AI のモデルを利用するためのツールやサービスが必要になります。これらのサービスを利用するためのアカウント作成方法について[こちら](./account.md)にまとめています。
 
 # 生成 AI アプリケーション
 
