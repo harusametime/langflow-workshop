@@ -8,7 +8,7 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 
 このワークショップでは以下の代表的な生成 AI アプリケーションを取り扱う予定です。
 
-- LLM とのチャットボット: [basic_chatbot](./basic_chatbot/README.md)
+- LLM とのチャットボット: [basic_chatbot](./basic_chatbot/)
 
     ユーザが質問を入力すると LLM が持っている知識にもとづいて回答するチャットボット。
 
@@ -19,4 +19,6 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 - Agentic AI  
 
     ユーザが複雑なタスク・ゴールを与えると、生成 AI モデルをそれを理解し、必要に応じてデータベースの検索、外部 API の実行といったツールを利用しながら、タスクを完了するエージェント。チャットボットや RAG などと異なり、生成 AI モデルは思考やツールの適用などを繰り返し行います。参考: [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
+
+# Workshop の進め方
 
