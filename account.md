@@ -20,7 +20,7 @@ DataStax の Langflow や生成 AI のためのデータを保存する Astra DB
 NVIDIA NIM で利用できる LLM を API 経由で利用するためには、NVIDIA Cloud Account が必要です。
 まずNVIDIA のウェブサイトから NVIDIA Account を作成して、次に NVIDIA Cloud Account を作成します。
 
-まず以下のページから NVIDIA Account を作成します。メールに認証コードが届くのうで入力して完了します。    
+まず以下のページから NVIDIA Account を作成します。メールに認証コードが届くので入力して完了します。    
 https://ngc.nvidia.com/signin
 
 次に NVIDIA Cloud Account を作成します。この後、NVIDIA の提供する LLM を API 経由で利用するので、LLM へアクセスする以下のページから NVIDIA Cloud Account を作成しましょう。画面右上の Login をクリックして開く以下の画面に、NVIDIA Account のメールアドレスを入力します。　　
