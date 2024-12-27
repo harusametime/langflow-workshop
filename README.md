@@ -29,10 +29,17 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 <img src="./images/astra_console.png" width="70%" border =1/>
 </p>
 
-4. Langflow の画面を開いてワークショップを行います。ワークショップのコンテンツは次の節にまとめています。
+4. Langflow の画面を開いてワークショップを行います。New Flow のボタンから作成が可能です。
+ワークショップのコンテンツは次の節にまとめています。
+
 <p align="center">
 <img src="./images/langflow_console.png" width="70%" border =1/>
 </p>
 
 # Workshop のコンテンツ
 
+- NVIDIA NIM を利用したチャットボット
+
+- NVIDIA NIM と Astra DB を利用した RAG
+
+- NVIDIA NIM を利用した AI エージェント 
