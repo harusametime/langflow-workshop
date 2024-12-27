@@ -31,7 +31,7 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 
 4. Langflow の画面を開いてワークショップを行います。ワークショップのコンテンツは次の節にまとめています。
 <p align="center">
-<img src="./images/langflow_console.png.png" width="70%" border =1/>
+<img src="./images/langflow_console.png" width="70%" border =1/>
 </p>
 
 # Workshop のコンテンツ
