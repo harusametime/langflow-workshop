@@ -20,5 +20,19 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 
     ユーザが複雑なタスク・ゴールを与えると、生成 AI モデルをそれを理解し、必要に応じてデータベースの検索、外部 API の実行といったツールを利用しながら、タスクを完了するエージェント。チャットボットや RAG などと異なり、生成 AI モデルは思考やツールの適用などを繰り返し行います。参考: [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
 
-# Workshop の進め方
+# Workshop の準備
+
+1. [アカウント作成方法](./account.md) に従って、DataStax のアカウントとそれ以外の必要なアカウントを作成します。
+2. DataStax の[コンソール](https://astra.datastax.com/)でサインインします。
+3. Langflow の画面に移動します。画面上部のメニューから Langflow に移動できます。
+<p align="center">
+<img src="./images/astra_console.png" width="70%" border =1/>
+</p>
+
+4. Langflow の画面を開いてワークショップを行います。ワークショップのコンテンツは次の節にまとめています。
+<p align="center">
+<img src="./images/langflow_console.png.png" width="70%" border =1/>
+</p>
+
+# Workshop のコンテンツ
 
