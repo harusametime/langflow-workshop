@@ -27,7 +27,7 @@
 Basic Prompting のテンプレートのフローが表示されます。ユーザからの入力、LLM、LLM に対する指示 (プロンプト)、ユーザへの出力の4つのコンポーネントで構成されています。
 
 <p align="center">
-<img src="./imaegs/basic_prompt_flow.png" width="70%" border =1/>
+<img src="./images/basic_prompt_flow.png" width="70%" border =1/>
 </p>
 
 ## テンプレートのカスタマイズ
