@@ -41,14 +41,23 @@ Basic Prompting のテンプレートのフローが表示されます。ユー�
 - Prompt の Prompt Message を NVIDIA の System Message に
 - NVIDIA の Text を Chat Output の Text に
 
-![alt text](./images/replace_nvidia.png)
+<p align="center">
+<img src="./images/replace_nvidia.png" width="70%" border =1/>
+</p>
+
 
 ### NVIDIA API Key の設定
 
-![alt text](./images/create_variable.png)
+<p align="center">
+<img src="./images/create_variable.png" width="70%" border =1/>
+</p>
 
 
-![alt text](./images/set_key.png)
+
+<p align="center">
+<img src="./images/set_key.png" width="70%" border =1/>
+</p>
+
 
 ## チャットボットのテスト
 
@@ -56,11 +65,17 @@ NVIDIA のコンポーネントで`Model Name`を選択します (以下の図�
 Prompt の Template に従って、選択したモデルが回答を生成します。
 
 
-![alt text](./images/test_chatbot.png)
+<p align="center">
+<img src="./images/test_chatbot.png" width="70%" border =1/>
+</p>
+
 
 出力は Chat Output の Message を開くと text の列で確認することができます。例えば、「こんにちは」と入れたとき "Hello! I'm glad to assist you in getting started with building something new. What would you like to create or explore?"が出力されました。
 
-![alt text](./images/output_table.png)
+<p align="center">
+<img src="./images/output_table.png" width="70%" border =1/>
+</p>
+
 
 ### プロンプトの修正
 
@@ -68,6 +83,11 @@ Prompt のコンポーネントの Template を開いて修正して、「こん
 
 ### Playground を利用したテスト
 
-![alt text](./images/playground.png)
+<p align="center">
+<img src="./images/playground.png" width="70%" border =1/>
+</p>
 
-![alt text](./images/playground_chat.png)
+
+<p align="center">
+<img src="./images/playground_chat.png" width="70%" border =1/>
+</p>
