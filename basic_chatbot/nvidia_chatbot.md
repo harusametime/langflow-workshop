@@ -55,7 +55,7 @@ Basic Prompting のテンプレートのフローが表示されます。ユー�
 
 
 <p align="center">
-<img src="./images/set_key.png" width="70%" border =1/>
+<img src="./images/set_key.png" width="40%" border =1/>
 </p>
 
 
@@ -84,7 +84,7 @@ Prompt のコンポーネントの Template を開いて修正して、「こん
 ### Playground を利用したテスト
 
 <p align="center">
-<img src="./images/playground.png" width="70%" border =1/>
+<img src="./images/playground.png" width="50%" border =1/>
 </p>
 
 
