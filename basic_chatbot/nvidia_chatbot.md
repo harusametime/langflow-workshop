@@ -30,6 +30,35 @@ Basic Prompting のテンプレートのフローが表示されます。ユー�
 <img src="./images/basic_prompt_flow.png" width="70%" border =1/>
 </p>
 
+もし OpenAI の API Key を持っていれば、　OpenAI API Key の入力フォーム右側にある丸いアイコンをクリックして、`Add New Variable`から OpenAI API Key を登録すれば利用可能です。
+
 ## テンプレートのカスタマイズ
 
+### NVIDIA コンポーネントの配置と接続
+
+ここでは、上記のテンプレートにおける OpanAI のモデルを NVIDIA が提供するモデルに変更してみます。左のメニューから`Models`のカテゴリを選択し、`NVIDIA`を右のワークスペースにドラッグアンドドロップします。もともと配置されていた OpenAI のコンポーネントは削除します。それ以外のコンポーネントと以下のように接続します。
+- Chat Input の Message を NVIDIA の Input に
+- Prompt の Prompt Message を NVIDIA の System Message に
+- NVIDIA の Text を Chat Output の Text に
+
+![alt text](./images/replace_nvidia.png)
+
+### NVIDIA API Key の設定
+
+![alt text](./images/create_variable.png)
+
+
+![alt text](./images/set_key.png)
+
+## チャットボットのテスト
+
+NVIDIA のコンポーネントで`Model Name`を選択します (以下の図では `nvidia/nemotron-mini-4b-instruct`を選択しています。)。Chat Input の Text に質問をいれて、Chat Output の再生ボタン(▷)をクリックすると、
+Prompt の Template に従って、選択したモデルが回答を生成します。
+
+
+![alt text](./images/test-chatbot.png)
+
+出力は Chat Output の Message を開くと text の列で確認することができます。例えば、「こんにちは」と入れたとき "Hello! I'm glad to assist you in getting started with building something new. What would you like to create or explore?"が出力されました。
+
+![alt text](./images/output_table.png)
 
