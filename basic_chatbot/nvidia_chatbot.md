@@ -56,7 +56,7 @@ NVIDIA のコンポーネントで`Model Name`を選択します (以下の図�
 Prompt の Template に従って、選択したモデルが回答を生成します。
 
 
-![alt text](./images/test-chatbot.png)
+![alt text](./images/test_chatbot.png)
 
 出力は Chat Output の Message を開くと text の列で確認することができます。例えば、「こんにちは」と入れたとき "Hello! I'm glad to assist you in getting started with building something new. What would you like to create or explore?"が出力されました。
 
