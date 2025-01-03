@@ -62,3 +62,12 @@ Prompt の Template に従って、選択したモデルが回答を生成しま
 
 ![alt text](./images/output_table.png)
 
+### プロンプトの修正
+
+Prompt のコンポーネントの Template を開いて修正して、「こんにちは」に対して日本語で回答してくれるように指示してみましょう。デフォルトの template は "Answer the user as if you were a GenAI expert, enthusiastic about helping them get started building something fresh." なので、英語で指示していますが、日本語で指示してみます。例えば「ユーザーからの質問に対して日本語で回答してください。」としてみましょう。先程のテストと同様に、Chat Outputの再生ボタンをクリックするとフローが実行され出力を得ることができます。
+
+### Playground を利用したテスト
+
+![alt text](./images/playground.png)
+
+![alt text](./images/playground_chat.png)
