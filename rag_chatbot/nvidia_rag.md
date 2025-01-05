@@ -29,10 +29,66 @@ RAG チャットボットのテンプレートのフローが表示されます�
 - 関連するデータをあらかじめベクトルデータベースに保存するフロー
 - ベクトルデータベースから検索して LLM で回答を生成するフロー
 
+<p align="center">
+<img src="./images/rag_double_flows.png" width="70%" border =1/>
+</p>
+
+それぞれのフローの設定について以下で説明します。
+
 ## データをあらかじめデータベースに登録
+
+まずは2つのフローのうち下部にあるデータをあらかじめベクトルデータベースに保存するフローを設定します。このフローはデータベースに投入するファイルをアップロードする File、それを分割する Split Text、投入先のデータベースである Astra DB とベクトル化に必要なEmbeddiings Model として OpenAI Embeddings のコンポーネントから構成されます。
+
+ここではデータを投入するベクトルデータベースが必要なので、Astra Vector DB を作成し、そこにデータを投入します。データを投入する際はテキストからベクトルという数百以上の数値データに変換するため、NVIDIA の埋め込みモデルを使用します。
 
 ### Langflow から Astra Vector DB を作成
 
-![alt text](./images/create_new_db.png)
+まず Langflow の Astra DB コンポーネントから Vector DB を作成します。以下の図のように、Database から Add New Database を選んでデータベースを作成することができます。Langflow からだけでなく、DataStax の [Astra DB コンソール](https://astra.datastax.com/)からも作成することは可能です。
 
-![alt text](./images/input_db_info.png)
+<p align="center">
+<img src="./images/create_new_db.png" width="20%" border =1/>
+</p>
+
+Add New Database を選ぶと必要事項を記入する画面が出てくるので、データベース名とデプロイ先のクラウドプロバイダ、リージョンを選択します。
+
+<p align="center">
+<img src="./images/input_db_info.png" width="40%" border =1/>
+</p>
+
+データベースが作成されたら、次に collection を作成します。Collection はベクトルデータベースのテーブルで、実際にベクトルを格納します。データベースは複数の collection で構成されます。Collection を作成するときは次元数 (Dimensions) を指定する必要があり、利用する Embeddings Model の仕様に合わせる必要があります。今回は多言語に対応した baai/bge-m3 を後ほど選択しますので、このモデルが 1024 次元のベクトルを出力する仕様のため、ここでは 1024 と指定します。
+<p align="center">
+<img src="./images/create_collection.png" width="40%" border =1/>
+</p>
+
+### Astra DB Application Token の取得と設定
+
+作成したデータベースにアクセスするための Astra DB Application Token を取得して、Langflow のコンポーネントに設定します。Astra DB Application Token は [Astra DB コンソール](https://astra.datastax.com/) から取得します。
+
+左側のメニューで先程作成したデータベース名を選択し、右側の Application Tokens の Generate Token ボタンをクリックすることで Token を表示することができます。Token は伏せ字ですが、右側のアイコンで表示したりコピーしたりすることが可能です。
+<p align="center">
+<img src="./images/astra_db_generate_token.png" width="50%" border =1/>
+</p>
+
+<p align="center">
+<img src="./images/astra_db_show_token.png" width="40%" border =1/>
+</p>
+
+コピーが完了したら Astra DB コンポーネントの Astra DB Application Token から Add New Variable を選択して Application Token を作成して登録します。
+
+<p align="center">
+<img src="./images/astra_db_reg_token.png" width="20%" border =1/>
+</p>
+
+### ファイルのアップロード
+
+File のコンポーネントからローカルにあるファイルをアップロードすることができます。ここでは以下の PDF をダウンロードして試してみます。
+
+経済産業省「生成 AI 時代の DX 推進に必要な人材・スキルの考え方 2024～変革のための生成 AI への向き合い方～」, https://www.meti.go.jp/shingikai/mono_info_service/digital_jinzai/pdf/20240628_2.pdf
+
+ダウンロードしたら File コンポーネントの Path からファイルのパスを指定してアップロードします。
+
+![alt text](images/file_upload_path.png)
+
+### Embeddings Model の変更
+
+OpenAI Embeddings がデフォルトで指定されていますが、ここでは NVIDIA NIM で提供されている baai/bge-m3 を利用します。
