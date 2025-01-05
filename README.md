@@ -4,6 +4,17 @@
 
 DataStax Langflow を利用するためには DataStax のアカウントが必要です。アカウントは無料で作成することが可能です。また、生成 AI のアプリケーションを開発する際には Langflow 以外に、LLM (大規模言語モデル) などの生成 AI のモデルを利用するためのツールやサービスが必要になります。これらのサービスを利用するためのアカウント作成方法について[こちら](./account.md)にまとめています。
 
+# Workshop のコンテンツ
+
+- [NVIDIA NIM を利用したチャットボット](./basic_chatbot/nvidia_chatbot.md)  
+チャットの入力、LLMへのプロンプト (指示) を指定すると、NVIDIA NIM で提供されている LLM の API を使って出力を生成します。
+    
+- [NVIDIA NIM と Astra DB を利用した RAG](./rag_chatbot/nvidia_rag.md)  
+ユーザーのクエリに対して関連するデータを検索し、そのデータを元にAIが回答を生成します。これにより、AIが最新の情報を利用して回答を生成するため、誤った情報を提供するリスクが減少します。
+
+- NVIDIA NIM を利用した AI エージェント 
+
+<!-- 
 # 生成 AI アプリケーション
 
 このワークショップでは以下の代表的な生成 AI アプリケーションを取り扱う予定です。
@@ -18,7 +29,7 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 
 - Agentic AI  
 
-    ユーザが複雑なタスク・ゴールを与えると、生成 AI モデルをそれを理解し、必要に応じてデータベースの検索、外部 API の実行といったツールを利用しながら、タスクを完了するエージェント。チャットボットや RAG などと異なり、生成 AI モデルは思考やツールの適用などを繰り返し行います。参考: [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
+    ユーザが複雑なタスク・ゴールを与えると、生成 AI モデルをそれを理解し、必要に応じてデータベースの検索、外部 API の実行といったツールを利用しながら、タスクを完了するエージェント。チャットボットや RAG などと異なり、生成 AI モデルは思考やツールの適用などを繰り返し行います。参考: [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/) -->
 
 # Workshop の準備
 
@@ -36,12 +47,5 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 <img src="./images/langflow_console.png" width="70%" border =1/>
 </p>
 
-# Workshop のコンテンツ
 
-- [NVIDIA NIM を利用したチャットボット](./basic_chatbot/nvidia_chatbot.md)  
-チャットの入力、LLMへのプロンプト (指示) を指定すると、NVIDIA NIM で提供されている LLM の API を使って出力を生成します。
-    
-- [NVIDIA NIM と Astra DB を利用した RAG](./rag_chatbot/nvidia_rag.md)  
-ユーザーのクエリに対して関連するデータを検索し、そのデータを元にAIが回答を生成します。これにより、AIが最新の情報を利用して回答を生成するため、誤った情報を提供するリスクが減少します。
 
-- NVIDIA NIM を利用した AI エージェント 
