@@ -38,8 +38,10 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 
 # Workshop のコンテンツ
 
-- [NVIDIA NIM を利用したチャットボット](./basic_chatbot/)
-    チャットの入力、LLMへのプロンプト (指示) を指定すると、NVIDIA NIM で提供されている LLM の API を使って出力を生成します。
+- [NVIDIA NIM を利用したチャットボット](./basic_chatbot/nvidia_chatbot.md)  
+チャットの入力、LLMへのプロンプト (指示) を指定すると、NVIDIA NIM で提供されている LLM の API を使って出力を生成します。
     
-- NVIDIA NIM と Astra DB を利用した RAG
+- [NVIDIA NIM と Astra DB を利用した RAG](./rag_chatbot/nvidia_rag.md)  
+ユーザーのクエリに対して関連するデータを検索し、そのデータを元にAIが回答を生成します。これにより、AIが最新の情報を利用して回答を生成するため、誤った情報を提供するリスクが減少します。
+
 - NVIDIA NIM を利用した AI エージェント 
