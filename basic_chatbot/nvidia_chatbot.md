@@ -90,11 +90,18 @@ Prompt のコンポーネントの Template を開いて修正して、「こん
 
 ### Playground を利用したテスト
 
+再生ボタンでフローを動くことが確認できたら、チャットの UI を備えた Playground からテストしてみます。より簡単に様々な問い合わせを試すことが可能です。
+
+Playground の起動は画面右上の Playground ボタンから始めます。
+
 <p align="center">
 <img src="./images/playground.png" width="50%" border =1/>
 </p>
 
+Playground を起動すると以下のような画面が立ち上がります。すでにフローを動かしてテストしたチャットが表示されますが、左上の + のボタンから新しいチャットを開始することができます。
 
 <p align="center">
 <img src="./images/playground_chat.png" width="70%" border =1/>
 </p>
+
+これで基本的なチャットボットの構築は終わりです。テストをしながら様々なモデルやプロンプトを試してみましょう。
