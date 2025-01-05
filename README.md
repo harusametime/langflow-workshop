@@ -8,7 +8,7 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 
 このワークショップでは以下の代表的な生成 AI アプリケーションを取り扱う予定です。
 
-- LLM とのチャットボット: [basic_chatbot](./basic_chatbot/)
+- LLM とのチャットボット
 
     ユーザが質問を入力すると LLM が持っている知識にもとづいて回答するチャットボット。
 
@@ -38,8 +38,8 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 
 # Workshop のコンテンツ
 
-- NVIDIA NIM を利用したチャットボット
-
+- [NVIDIA NIM を利用したチャットボット](./basic_chatbot/)
+    チャットの入力、LLMへのプロンプト (指示) を指定すると、NVIDIA NIM で提供されている LLM の API を使って出力を生成します。
+    
 - NVIDIA NIM と Astra DB を利用した RAG
-
 - NVIDIA NIM を利用した AI エージェント 
