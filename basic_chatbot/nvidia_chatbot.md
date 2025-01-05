@@ -48,11 +48,18 @@ Basic Prompting のテンプレートのフローが表示されます。ユー�
 
 ### NVIDIA API Key の設定
 
+NVIDIA のモデルを利用するためには NVIDIA API Key を発行してコンポーネントに設定する必要があります。API Key の発行方法は[[こちら](https://github.com/harusametime/langflow-workshop/blob/main/account.md#nvidia-api-key-%E3%81%AE%E7%99%BA%E8%A1%8C)]を確認してください。
+
+API Key を発行したら、コンポーネントの`NVIDIA API KEY`にある右側のアイコンをクリックして、Add New Variable を選択します。
+
 <p align="center">
 <img src="./images/create_variable.png" width="70%" border =1/>
 </p>
 
-
+Create Variable の画面が出てくるので
+- Variable Name に任意の名前を設定します
+- Type から Credential を選択します（そうすると Value の値を隠すことができます
+- Value には発行した API Key を入力します
 
 <p align="center">
 <img src="./images/set_key.png" width="40%" border =1/>
