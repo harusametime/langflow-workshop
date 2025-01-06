@@ -87,7 +87,7 @@ File のコンポーネントからローカルにあるファイルをアップ
 
 ダウンロードしたら File コンポーネントの Path からファイルのパスを指定してアップロードします。
 <p align="center">
-<img src="images/file_upload_path.png" width="40%" border =1/>
+<img src="images/file_upload_path.png" width="30%" border =1/>
 </p>
 
 ### Embeddings Model の変更
@@ -101,5 +101,5 @@ OpenAI Embeddings がデフォルトで指定されていますが、ここで�
 Astra DB のコンポーネント右上にある再生ボタン (▷) をクリックすることでデータ投入のフローが実行されます。
 [Astra DB のコンソール](https://astra.datastax.com/) に移動して、先程作成したデータベース、collection を選択するとアップロードされた PDF のテキストとベクトル情報が追加されていることがわかります。
 <p align="center">
-<img src="./images/check_vector_data.png" width="40%" border =1/>
+<img src="./images/check_vector_data.png" width="70%" border =1/>
 </p>
