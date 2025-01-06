@@ -86,9 +86,20 @@ File のコンポーネントからローカルにあるファイルをアップ
 経済産業省「生成 AI 時代の DX 推進に必要な人材・スキルの考え方 2024～変革のための生成 AI への向き合い方～」, https://www.meti.go.jp/shingikai/mono_info_service/digital_jinzai/pdf/20240628_2.pdf
 
 ダウンロードしたら File コンポーネントの Path からファイルのパスを指定してアップロードします。
-
-![alt text](images/file_upload_path.png)
+<p align="center">
+<img src="images/file_upload_path.png" width="40%" border =1/>
+</p>
 
 ### Embeddings Model の変更
 
-OpenAI Embeddings がデフォルトで指定されていますが、ここでは NVIDIA NIM で提供されている baai/bge-m3 を利用します。
+OpenAI Embeddings がデフォルトで指定されていますが、ここでは NVIDIA NIM で提供されている baai/bge-m3 を利用します。以下の図に示すように Model から選びます。
+<p align="center">
+<img src="./images/set_embed_model.png" width="40%" border =1/>
+</p>
+
+### データ投入と確認
+Astra DB のコンポーネント右上にある再生ボタン (▷) をクリックすることでデータ投入のフローが実行されます。
+[Astra DB のコンソール](https://astra.datastax.com/) に移動して、先程作成したデータベース、collection を選択するとアップロードされた PDF のテキストとベクトル情報が追加されていることがわかります。
+<p align="center">
+<img src=".images/check_vector_data.png" width="40%" border =1/>
+</p>
