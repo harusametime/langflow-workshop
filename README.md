@@ -22,8 +22,9 @@ Langflow が提供する3つの基本テンプレートを少しカスタマイ�
 - [NVIDIA NIM と Astra DB を利用した RAG](./rag_chatbot/nvidia_rag.md)  
 ユーザーのクエリに対して関連するデータを検索し、そのデータを元にAIが回答を生成します。これにより、AIが最新の情報を利用して回答を生成するため、誤った情報を提供するリスクが減少します。
 
-- NVIDIA NIM を利用した AI エージェント (開発中)
- ユーザが複雑なタスク・ゴールを与えると、生成 AI モデルをそれを理解し、必要に応じてデータベースの検索、外部 API の実行といったツールを利用しながら、タスクを完了するエージェント。チャットボットや RAG などと異なり、生成 AI モデルは思考やツールの適用などを繰り返し行います。参考: [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/) -->
+- NVIDIA NIM を利用した AI エージェント (開発中)  
+ ユーザが複雑なタスク・ゴールを与えると、生成 AI モデルをそれを理解し、必要に応じてデータベースの検索、外部 API の実行といったツールを利用しながら、タスクを完了するエージェント。チャットボットや RAG などと異なり、生成 AI モデルは思考やツールの適用などを繰り返し行います。
+ 参考: [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
 
 <!-- - [NVIDIA NIM を利用した AI エージェント](./agentic_workflow/nvidia_agentic_workflow.md) -->
 
