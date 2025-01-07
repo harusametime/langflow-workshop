@@ -30,13 +30,13 @@
 ### AI エージェントフローの全体像
 
 <p align="center">
-<img src="images/agent_flow.png" width="40%" border =1/>
+<img src="images/agent_flow.png" width="60%" border =1/>
 </p>
 
 ### AI エージェントの修正
 
 <p align="center">
-<img src="images/agent_config.png" width="40%" border =1/>
+<img src="images/agent_config.png" width="30%" border =1/>
 </p>
 
 ## Playground を使った AI エージェントのテスト
