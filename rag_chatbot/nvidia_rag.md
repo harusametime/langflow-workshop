@@ -103,3 +103,30 @@ Astra DB のコンポーネント右上にある再生ボタン (▷) をクリ�
 <p align="center">
 <img src="./images/check_vector_data.png" width="70%" border =1/>
 </p>
+
+## ベクトルデータベースから検索して LLM で回答を生成
+
+次に上部のフローである検索と LLM で回答を生成するフローを設定します。このフローは左から順に、チャットの入力、入力をベクトル化するOpenAI Embeddings、ベクトル化された入力を検索する Astra DB、検索されたデータをテキスト化する Parse Data、テキストをプロンプトに組み込む Prompt、プロンプトに基づいて回答を生成する OpenAI、チャットの出力となっています。ここでは以下のコンポーネントを変更します。
+
+1. OpenAI Embeddings を NVIDIA のコンポーネントに置き換え、データベースへデータを追加する際と同じモデル (baai/bge-m3) を指定する
+1. Astra DB に、データを追加した先のデータベース名、コレクション名を指定する
+1. OpenAI は NVIDIA の LLM に変更する
+
+1.と2.に関しては、データをデータベースに追加したときと同じ設定を利用します。データベースの作成は不要です。設定は上記の [Langflow から Astra Vector DB を作成](https://github.com/harusametime/langflow-workshop/blob/main/rag_chatbot/nvidia_rag.md#langflow-%E3%81%8B%E3%82%89-astra-vector-db-%E3%82%92%E4%BD%9C%E6%88%90)や[Embeddings Model の変更](https://github.com/harusametime/langflow-workshop/blob/main/rag_chatbot/nvidia_rag.md#embeddings-model-%E3%81%AE%E5%A4%89%E6%9B%B4)を参照してください。
+
+### OpenAI のコンポーネントを NVIDIA に変更する
+左のメニューの **Models から NVIDIA のコンポーネント** を選んで右のスペースにドラッグアンドドロップします (**Embeddings にある NVIDIA Embeddings ではありません**)。
+OpenAI のコンポーネントを下図のように NVIDIA で置き換えます。Model Name は `nvidia/nemotron-mini-4b-instruct` を選びます。NVIDIA API Key は、NVIDIA Emebddings に合わせて、すでに設定されている可能性もあります。もし設定されていなければ設定します。
+<p align="center">
+<img src="./images/nvidia_llm.png" width="50%" border =1/>
+</p>
+
+
+## Playground からテスト
+画面右上にある Playground からテストしてみます。
+今回アップロードした PDF の内容に関する質問をしてみましょう。例えば「知的労働者の生成 AI の業務利用割合について日本語で教えて下さい」と聞いてみましょう。
+PDF の p.7 にある文章を使って回答を生成することができています。
+
+<p align="center">
+<img src="./images/test_rag_chat.png" width="70%" border =1/>
+</p>
