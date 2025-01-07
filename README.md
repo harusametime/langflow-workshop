@@ -1,10 +1,20 @@
 # Langflow Workshop
 
+<p align="center">
+<img src="./images/demo.gif" width="70%" border =1/>
+</p>
+
 ローコード・ノーコードで生成 AI のアプリケーション開発を行うことができる Langflow の使い方を知るためのハンズオンコンテンツを提供しています。[DataStax Langflow](https://www.datastax.com/products/langflow) を利用することを想定していますが、[オープンソース版の Langflow](https://github.com/langflow-ai/langflow) でも環境を整えることで利用可能です。
 
 DataStax Langflow を利用するためには DataStax のアカウントが必要です。アカウントは無料で作成することが可能です。また、生成 AI のアプリケーションを開発する際には Langflow 以外に、LLM (大規模言語モデル) などの生成 AI のモデルを利用するためのツールやサービスが必要になります。これらのサービスを利用するためのアカウント作成方法について[こちら](./account.md)にまとめています。
 
 # Workshop のコンテンツ
+
+## まずはじめに
+Langflow が提供する3つの基本テンプレートを少しカスタマイズしながら進めます。
+<p align="center">
+<img src="./images/get_started.png" width="70%" border =1/>
+</p>
 
 - [NVIDIA NIM を利用したチャットボット](./basic_chatbot/nvidia_chatbot.md)  
 チャットの入力、LLMへのプロンプト (指示) を指定すると、NVIDIA NIM で提供されている LLM の API を使って出力を生成します。
@@ -12,7 +22,8 @@ DataStax Langflow を利用するためには DataStax のアカウントが必�
 - [NVIDIA NIM と Astra DB を利用した RAG](./rag_chatbot/nvidia_rag.md)  
 ユーザーのクエリに対して関連するデータを検索し、そのデータを元にAIが回答を生成します。これにより、AIが最新の情報を利用して回答を生成するため、誤った情報を提供するリスクが減少します。
 
-- NVIDIA NIM を利用した AI エージェント 
+- [NVIDIA NIM を利用した AI エージェント](./agentic_workflow/nvidia_agentic_workflow.md)
+
 
 <!-- 
 # 生成 AI アプリケーション
