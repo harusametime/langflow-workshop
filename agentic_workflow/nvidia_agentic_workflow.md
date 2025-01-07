@@ -9,8 +9,6 @@
 
 この AI エージェントの基本のテンプレートでは、URL を指定してWebページをダウンロードするツール、電卓のツールを与えます。例えば、URL を含めて質問すれば、AI エージェントは URL からダウンロードするツールを自動的に利用して、回答の生成に役立てるでしょう。
 
-<!-- チャットボットのコンポーネントは大きく4つあり、ユーザからの入力、LLM、LLM に対する指示 (プロンプト)、ユーザへの出力です。Langflow では、この4つのコンポーネントからなるテンプレートを提供しているので、このテンプレートを修正して利用します。LLM は NVIDIA で提供されているものを利用します。 -->
-
 ### 事前に準備するもの
 
 - DataStax のアカウント
@@ -33,14 +31,24 @@
 
 ### AI エージェントフローの全体像
 
+概要で説明したように、この AI エージェントフローは、チャットの入力、LLM を利用した Agent、チャットの出力を基本的なフローとして、URL からファイルをダウンロードするツールと、電卓の Calculator ツールを Agent に与えています。以下の図に示すように、URL と Calculator のツールが Agent の Tools に接続されていることがわかります。
+
 <p align="center">
 <img src="images/agent_flow.png" width="60%" border =1/>
 </p>
 
 ### AI エージェントの修正
 
+Agent を修正して NVIDIA のモデルで実行できるようにします。
+- Model Provider: `NVIDIA`
+- Model Name: `nvidia/nemotron-mini-4b-instruct`
+- NVIDIA API KEY: 作成した NVIDIA API Key を指定 ((こちら)[https://github.com/harusametime/langflow-workshop/blob/main/basic_chatbot/nvidia_chatbot.md#nvidia-api-key-%E3%81%AE%E8%A8%AD%E5%AE%9A]を参照)
+
 <p align="center">
 <img src="images/agent_config.png" width="30%" border =1/>
 </p>
 
 ## Playground を使った AI エージェントのテスト
+右上の Playground のボタンから Playground を起動してテストしてみましょう。
+
+
