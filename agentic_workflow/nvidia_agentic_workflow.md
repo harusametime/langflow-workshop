@@ -14,13 +14,29 @@
 
 ## テンプレートを利用したフローの作成
 
+
+[Workshopの準備](https://github.com/harusametime/langflow-workshop/blob/main/README.md#workshop-%E3%81%AE%E6%BA%96%E5%82%99) に従って、Langflow の画面を開きます。画面の右側に New Flow のボタンがあるのでクリックします。
+
+
 <p align="center">
-<img src="images/create_agent_workflow.png" width="40%" border =1/>
+<img src="images/create_agent_workflow.png" width="60%" border =1/>
 </p>
+
+ボタンをクリックするといくつかのテンプレートが表示されます。今回は LLM を使った AI エージェントのテンプレートとして、Simple Agent を選択します。
+
+
+## AI エージェントフローの修正
+
+### AI エージェントフローの全体像
 
 <p align="center">
 <img src="images/agent_flow.png" width="40%" border =1/>
 </p>
+
+### AI エージェントの修正
+
 <p align="center">
 <img src="images/agent_config.png" width="40%" border =1/>
 </p>
+
+## Playground を使ったAI エージェントフローのテスト
