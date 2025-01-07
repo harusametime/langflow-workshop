@@ -39,4 +39,4 @@
 <img src="images/agent_config.png" width="40%" border =1/>
 </p>
 
-## Playground を使ったAI エージェントフローのテスト
+## Playground を使った AI エージェントのテスト
